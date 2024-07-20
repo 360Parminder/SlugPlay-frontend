@@ -1,5 +1,6 @@
 import React from 'react'
 import { IonIcon } from '@ionic/react';
+import { search } from 'ionicons/icons';
 const Navbard = () => {
   return (
     <div className=' h-16 w-screen bg-black flex row text-slate-200 justify-between px-10 items-center'>
@@ -8,8 +9,8 @@ const Navbard = () => {
            <button>Movie</button>
            <button>Series</button>
            <button>Originals</button>
-           <button>
-            <IonIcon name='cafe-outline' color='#fff' size='20'/>
+           <button className='flex items-center justify-center'>
+            <IonIcon className='text-2xl'  icon={search}/>
            </button>
             
             </div>
