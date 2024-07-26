@@ -65,6 +65,8 @@ const VideoPlayer = () => {
 
   const handleTimeUpdate = () => {
     setCurrentTime(videoRef.current.currentTime / 60);
+    console.log(videoRef.current.currentTime / 60);
+
     const progress = (videoRef.current.currentTime / videoRef.current.duration) * 100;
     setProgress(progress);
     // console.log(videoRef.current.duration);¯
@@ -100,8 +102,8 @@ const VideoPlayer = () => {
       }
     };
   }, []);
-  console.log(currentTime);
-  console.log(duration);
+  console.log("currentTime",currentTime);
+  console.log("duration",duration); 
 
   return (
     <div className="w-screen h-screen p-10 bg-black flex items-center justify-center">
@@ -151,7 +153,7 @@ const VideoPlayer = () => {
                   onChange={handleProgressChange}
                   className="w-full"
                 />
-                <p className='text-left'> {currentTime.toFixed(2)} / {(duration / 60).toFixed(2)}</p>
+                <p className='text-left'> {currentTime.toFixed(2)} / {(duration).toFixed(2)}</p>
 
 
               </div>

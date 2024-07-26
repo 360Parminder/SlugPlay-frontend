@@ -7,13 +7,14 @@ import Profile from './Pages/Profile';
 import VideoPlayer from './Pages/VideoPlayer';
 import Navbard from './Components/Navbard';
 import VideoDetail from './Pages/VideoDetail';
+import Register from './Pages/Register';
 setupIonicReact();
  const App=()=> {
 
   return (
 <>
-
-<VideoPlayer/>
+<Register/>
+{/* <VideoPlayer/> */}
 {/* <VideoDetail/> */}
 </>
   )
