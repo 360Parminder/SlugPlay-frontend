@@ -13,9 +13,10 @@ setupIonicReact();
 
   return (
 <>
-<Register/>
+{/* <Register/> */}
 {/* <VideoPlayer/> */}
 {/* <VideoDetail/> */}
+<Profile/>
 </>
   )
 }

@@ -7,19 +7,28 @@ export const userDataContext = createContext()
 
 
 export const UserDataProvider = ({children}) => {
-    const [userData,setUserData]=useState('Parminder')
+    const [userData,setUserData]=useState({
+        name:'',
+        email:'',
+        password:'',
+        phone:'',
+        address:'',
+        role:'',
+        id:''
+
+    })
     const [userToken,setUserToken]=useState('')
     useEffect(() => {
      
-        try {
-            const response = axios.get('/Profile')
-            if (response.status==200) {
-                setUserData(response.data)
-            }
+        // try {
+        //     const response = axios.get('/Profile')
+        //     if (response.status==200) {
+        //         setUserData(response.data)
+        //     }
 
-        } catch (error) {
+        // } catch (error) {
             
-        }
+        // }
 
     }, [])
 

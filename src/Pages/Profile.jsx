@@ -6,7 +6,7 @@ const userData = useContext(userDataContext)
 console.log(userData);
 return(
 <>
-<h1>hello</h1>
+
 
 </>
 )
